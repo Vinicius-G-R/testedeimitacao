@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #262626;
+    color: #F2AE2E;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #F2AE2E;
+}
+
+menu {
+    background-color: #191919;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: .7em;
+}
+
+menu nav {
+    margin-left: 20px;
+}
+
+header{
+    background: url(https://img.freepik.com/fotos-gratis/interior-de-espaco-de-escritorio-moderno_158595-5206.jpg?w=740&t=st=1690499147~exp=1690499747~hmac=1e8fdc05c99a032ba9f7ba86f16957630634cf3655232d9f5fffce86b28c843f) no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    z-index: 2;
+    color: white;
+}
+
+header button {
+    background-color: #F2AE2E;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    z-index: 2;
+    font-size: 0.7em;
+}
+
+header::after {
+    content: "";
+    background-color: #19191941;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+section#section01 {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+section#section01 > h1 {
+    margin-top: 20px;
+}
+
+section#section01 > h1,h5 {
+    color: white;
+    text-align: center;
+}
+
+section#section01 > h5 {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+section#section01 > div > h2, p {
+    color: white;
+}
+
+#container > div > img{
+    width: 150px;
+    border-bottom: 10px solid #F2AE2E;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    font-size: .5em;
+    width: 150px;
+}
+
+.box h2 {
+    margin-top: 10px;
+}
+
+.box p {
+    font-size: .3em;
+    width: 130px;
+    margin-top: 10px;
+    color: #868686;
+}
+
+.box button{
+    margin-top: 15px;
+    background-color: #F2AE2E;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    z-index: 2;
+    font-size: 0.7em;
+    width: 50px;
+}
+
+#section02 {
+    background: url(https://img.freepik.com/fotos-gratis/interior-de-espaco-de-escritorio-moderno_158595-5206.jpg?w=740&t=st=1690499147~exp=1690499747~hmac=1e8fdc05c99a032ba9f7ba86f16957630634cf3655232d9f5fffce86b28c843f) no-repeat;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#section02 h1, p{
+    z-index: 2;
+    max-width: 400px;
+}
+
+#section02::after {
+    content: "";
+    background-color: #191919a6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
