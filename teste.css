@@ -5,10 +5,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button:hover {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.267);
+    border: 3px solid #F2AE2E;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
 body {
     background: #262626;
     color: #F2AE2E;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     border: 1px solid #F2AE2E;
 }
@@ -95,12 +104,14 @@ section#section01 > div > h2, p {
 
 #container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .box {
-    font-size: .5em;
-    width: 150px;
+    font-size: 1em;
+    max-width: 200px;
+    margin-bottom: 15px;
 }
 
 .box h2 {
@@ -108,8 +119,8 @@ section#section01 > div > h2, p {
 }
 
 .box p {
-    font-size: .3em;
-    width: 130px;
+    font-size: .7em;
+    max-width: 190px;
     margin-top: 10px;
     color: #868686;
 }
@@ -149,4 +160,31 @@ section#section01 > div > h2, p {
     height: 100%;
     position: absolute;
     z-index: 1;
+}
+
+@media (max-width: 375px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+
+    .box {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+        width: 370px;
+    }
+
+    .box p {
+        font-size: .7em;
+        margin-top: 10px;
+        color: #868686;
+        width: 370px;
+    }
+
+    #container > div > img{
+        width: 300px;
+        border-bottom: 10px solid #F2AE2E;
+    }
+    
 }
